@@ -1,0 +1,23 @@
+http://tex.stackexchange.com/questions/1656/footnote-counter-would-like-to-restart-from-1-each-page
+	I would like the footnote counter to automatically restart from '1' for each page of my document.
+
+	\usepackage[perpage]{footmisc}
+
+http://tex.stackexchange.com/questions/26710/how-to-write-directly-french-characters-in-emacs-and-print-them-in-latex?answertab=active#tab-top
+	How to write directly French characters in Emacs and print them in LaTeX?
+\usepackage[frenchb]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+http://tex.stackexchange.com/questions/16592/leqslant-causes-undefined-control-sequence
+	\leqslant causes “Undefined control sequence”
+\leqslant
+\usepackage{amssymb}
+
+http://tex.stackexchange.com/questions/8857/how-to-type-special-accented-letters-in-latex
+
+https://en.wikibooks.org/wiki/LaTeX/Mathematics
+
+https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
+
+http://tex.stackexchange.com/questions/43692/footnotetext-numbering-for-many-footnotemark-automatic-solution
