@@ -1,0 +1,96 @@
+\documentclass[12pt,french]{article}
+
+\usepackage[frenchb]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb}
+\usepackage[perpage]{footmisc}
+
+\title{Sur l'\'equivalence de deux th\'eor\`emes de la Th\'eorie des ensembles.}
+
+\date{}
+
+\author{Par
+S. Saks (Varsovie)}
+
+\begin{document}
+\maketitle
+
+Dans une note ,,Un th\'eor\`eme sur les ensembles ferm\'es'' \footnotemark{} M. Sierpi\'nski d\'emontra sans l'aide de l'axiome de M. Zermelo une g\'en\'eralisation  du ,,Durchschnittsatz'' de Cantor \footnotemark{}.
+
+Nous nous proposons de d\'emontrer que ledit th\'eoreme de M. Sierpi\'nski est \'equivalent au th\'eor\`eme de M. Borel et que cette \'equivalence est valable pour des ,,espaces'' les plus g\'en\'erales.
+
+Pr\'ecisons d'abord les notations. $\mathfrak{A}$ d\'esignant un ensemble des ensembles (une famille des ensembles), les symboles $\sum \mathfrak{A}$ et $\prod \mathfrak{A}$ signifient resp. la somme et le produit de tous les ensembles de $\mathfrak{A}$. Si $\mathfrak{A}$ ne contient qu'un nombre fini des ensembles $A_1, A_2, ..., A_n$, nous posons aussi:
+
+$$\sum \mathfrak{A} \equiv A_1 + A_2 + ... + A_n \equiv \sum_{i=1}^{n}A_i,$$
+
+$$\prod \mathfrak{A} \equiv A_1 A_2 ... A_n = \prod_{i=1}^{n}A_i.$$
+
+(a) d\'esigne l'ensemble ne contenant que l'el\'ement $a$.
+
+Soit maintenant $E$ un ensemble que nous appelerons espace de points. Distinguous deux classes de sous-ensembles de $E$: la classe des ensembles ferm\'es et celle des ensembles born\'es.
+
+D\'efinition. Nous appelerons domaine chaque sous-ensemble de $E$ qui est compl\'ement (dans $E$) d'un ensemble ferm\'e.
+
+\footnotetext{Bull. de l'Ac. des Sciences de Cracovie 1918, p. 49.}
+
+\footnotetext{La d\'emonstration bien connue du th\'eor\'eme de \texttt{Cantor} s'appuit sur l'axiome de \texttt{M. Zermelo}}
+
+\textbf{Axiome I} (th\'eor\`eme de \texttt{M. Borel}). Si un ensemble ferm\'e et born\'e $F$ est contenu dans une somme des domaines, il existe un numre fini de ces odomaines $G_1, G_2, ..., G_n$, tels que $F \subset \sum_{i=1}^{n}G_i.$
+
+\textbf{Axiome II} (th\'eor\`eme de M. \texttt{Sierpinski}). Si $\mathfrak F$ est une famille des ensembles ferm\'es. dont l'un au moins est born\'e, telle que pour chaque nombre fini de ces ensembles leur produit ne soit pas vide, on a aussi: $\prod \mathfrak{F} \not\equiv 0$.
+
+1) Le premier de ces axiomes entra\^ine le deuxi\'eme.
+
+Soit $\mathfrak F$ une famille des ensembles ferm\'es dont l'un, p. e. $F_0$, est born\'e, telle que le produit de chaque nombre fini de ces ensembles ne soit pas vide. Supposons que $\prod \mathfrak{F} \equiv 0$, d'o\'u:
+
+$$F_0 \bullet \prod \mathfrak{F} \equiv 0,$$
+
+$$F_0 \subset C(\prod \mathfrak{F}).$$ \footnotemark
+
+Soit $\mathfrak S$ l'ensembles des compl\'ements des ensemles de la famille $\mathfrak F$. On a $C(\prod \mathfrak{F}) \equiv \sum \mathfrak{S}$, donc:
+
+$$F_0 \subset \sum \mathfrak{S}$$
+
+Les ensembles de la famille $\mathfrak{S}$ sont -- d'apr\`es la d\'1efinition -- des domaines. Il r\'esulte donc de l'axiome I qu'il existe un nombre fini de ces domaines $G_1, G_2, ..., G_n$ tel que:
+
+$$F_0 \subset \sum_{i=1}^{n}G_i,$$
+
+ou
+
+$$F_0 \bullet C(\sum_{i=1}^{n}G_i) \equiv 0,$$
+
+$$F_0 \bullet \prod_{i=1}^{n}F_i \equiv 0, \mbox{o\`u} F_i \equiv C(G_i) (i=1,2,...,n).$$
+
+Or les ensembles $F_0, F_1, ..., F_n$ appartenant \`a la famille $\mathfrak{F}$, leur produit ne peut pas \^etre vide. Nous aboutissons ainsi \`a un e conradiction.
+
+\footnotetext{A d\'esignant un sous-ensemble de $E$, $C(A)$ d\'esigne son compl\'ement dans $E$.}
+
+2) L'axiome II entra\^ine l'axiome I. Soit, en effet $F$, en ensemble ferm\'e et born\'e, contenu dans la somme des domaines d'une famille $\mathfrak{S}$, c. \'a. d.
+
+$$(1) F \subset \sum \mathfrak{S}\mbox{, ou: }F \bullet C(\sum \mathfrak{S}) \equiv 0.$$
+
+\'Ecartons le cas $F \equiv 0$, o\`u notre proposition est \'evidente et supposons qu'il n'existe aucun nombre fini des domaines de $\mathfrak{S}$ dont la somme contienne $F$. Appelons $\mathfrak{F}$ l'ensemble des compl\'ements des domaines de $\mathfrak{S}$. $\mathfrak{F}_0 \equiv \mathfrak{F} + (F)$ est donc une famille des ensembles ferm\'es, dont l'un au moins, savoir $F$, est born\'e. Soit $F_1, F_2, ...F_n$ une suite finie des ensembles de $\mathfrak{F}_0$. On a:
+
+$$(2) \prod_{i=1}^{n} F_i \supset F \bullet \prod_{i=1}^{n}F_i \equiv F \prod_{i=1}^{m}\Phi_i,$$
+
+$\Phi_i$ \'etant des ensembles de $\mathfrak{F}_0$, diff\'erents de $F$. Ils appartiennent donc \`a $\mathfrak{F}$ et leurs compl\'ements $G_i \equiv C(\Phi_i) (i=1,2,...,m)$ \`a $\mathfrak{S}$. On a:
+
+$$(3) F \bullet \prod_{i=1}^{m}\Phi_i \equiv F\bullet{}C(\sum_{i=1}^{m}G_i) \not\equiv 0,$$
+
+puisque, suivant notre hypoth\'ese, $F$ n'est pas conenu dans la somme des domaines de $\mathfrak{S}$ en nombre fini. En vertu donc de (2) et (3)
+
+$$\prod_{i=1}^{n}F_i \not\equiv{}0$$
+
+por chaque suite finie $F_i$ des ensembles de $\mathfrak{F}_0$ Par suite, d'apr'es l'axiome II:
+
+
+$$\prod\mathfrak{F}_0\not\equiv{}0\mbox{, donc: }F\bullet\prod\mathfrak{F}\not\equiv{}0\mbox{, ou:}$$
+
+$$F\bullet{}C(\sum\mathfrak{S})\not\equiv{}0,$$
+
+ce qui est contradictoire avec (1).
+
+Notre assetion est donc d\'emontr\'ee.
+
+\end{document}
